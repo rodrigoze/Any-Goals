@@ -1,0 +1,225 @@
+*{
+    font-family: Assistant;
+    margin:0;
+    padding:0;
+}
+#header{
+padding:12px;
+border-bottom: 1px solid lightgray;
+text-align:center;
+}
+#logo{
+    font-size:20px;
+    font-weight:800;
+}
+#credit{
+    font-size:14px;
+    font-weight: 200;
+}
+#nav{
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    margin-top:10px;
+}
+.link{
+    font-size: 18px;
+}
+
+#content,#dreams,#four,#five,#three,#allGoals{
+    display:flex;
+    flex-flow: wrap;
+    gap:15px;
+    margin-left:50px;
+    margin-right:50px;
+    padding:50px;
+}
+#all{
+    font-weight: 800;
+}
+#dreams,#four,#five,#three,#allGoals{
+    display:none;
+}
+
+
+.card{
+    display:flex;
+    justify-content: center;
+    flex-basis: 25%;
+    flex-flow: column;
+    text-align: center;
+    gap:10px;
+    padding:10px;
+    padding-top:15px;
+    border:1px solid lightgray;
+    background-color: lightgoldenrodyellow;
+}
+#title{
+    font-size:20px;
+    font-weight: 800;
+}
+#desc{
+    font-size: 17px;
+    margin-top:-10px;
+}
+#dueDate{
+    font-size:15px;
+    font-weight: 200;
+}
+#btns{
+    display: flex;
+    justify-content: space-between;
+}
+.x{
+    text-align: left;
+    font-size:14px;
+    font-weight:200;
+    color:gray;
+    border:none;
+    background: transparent;;
+    transition: all .3s ease-out;
+  }
+  .x:hover{
+    color:black;
+    transition: all .3s ease-out;
+  }
+
+  .t{
+    text-align: right;
+    font-size:14px;
+    font-weight:200;
+    color:black;
+    border:none;
+    background: transparent;;
+    transition: all .3s ease-out;
+  }
+  .t:hover{
+    color:gray;
+    transition: all .3s ease-out;
+  }
+  #popUp{
+    position: absolute;
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    max-width:500px;
+    max-height: 500px;
+    transform: translate(-50%, -50%);
+    overflow-y:scroll;
+    border-radius: 5px;
+    padding: 25px;
+    text-align:center;
+    border: 1px solid lightgray;
+    background-color: lightyellow;
+    z-index: 7;
+
+  }
+#popTitle{
+    font-size:25px;
+    font-weight: 800;
+}
+#notes{
+    font-size: 18px;
+    font-weight:200;
+}
+#popDate{
+    font-size:15px;
+    font-weight: 200;
+}
+#exit{
+    margin-top:25px;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: lightsteelblue;
+    color:black;
+    border: none;
+    opacity: 0.8;
+    padding:5px;
+    text-align:center;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    border-radius: 5px;
+    padding: 25px;
+    text-align:center;
+    border: 1px solid lightgray;
+    background-color: aliceblue;
+  }
+  
+  /* Full-width input fields */
+  .form-container input{
+    font-size: 0.9rem;
+    width:90%;
+    padding: 15px;
+    margin:3px;
+    border:none;
+    border-bottom: 7px solid black;
+    background: none;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus {
+    font-weight: 700;
+    font-size:1rem;
+    outline: none;
+  }
+  textarea{
+    font-size: 0.9rem;
+    width:90%;
+    padding: 15px;
+    margin:3px;
+    border:none;
+    border-bottom: 7px solid black;
+    background: none;
+  }
+
+  textarea:focus{
+    font-weight: 700;
+    font-size:1rem;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    margin-top:10px;
+    background-color: lightsteelblue;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: gray;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  #buttons{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightsteelblue;
+  }
