@@ -15,8 +15,7 @@ function Goals (title,desc,dueDate,notes,category,email) {
 }
 
 
- const goalOne = new Goals('jim','description','24/01/22','asjdiasodj','Goals','asd@gmail.com');
- const goalTwo = new Goals('jim','description','24/01/22','asjdiasodj','Goals','asd@gmail.com');
+ const goalOne = new Goals('I want to be a millionare','I want to obtain it in 1 year','24/0/22','Reaching the million-dollar mark is a laborious task and can only be accomplished by the serious individual who is willing to pay the price. Becoming a millionaire isn’t for those who just want to ‘settle’ in life. Nor will you become a millionaire if you’re looking for ‘get rich quick’ schemes. It requires high risk that can turn into high reward. Even though becoming a millionaire is easier than it’s ever been, not many people are willing or able to do it. Many people ‘play it safe’ or let their excuses hold them back. However, for those who believe they can achieve great financial wealth in their lives, keep reading. You might ask, “Why do I need to learn how to become a millionaire?” It’s simple. When most people think or talk about becoming millionaires, they’re actually looking to spend $1 million, not necessarily earn millions of dollars. However, if you really think about it, there are many more reasons for becoming a millionaire.','Goals','asd@gmail.com');
 
 
  addGoals(goalOne);
