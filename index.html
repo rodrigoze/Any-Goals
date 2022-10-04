@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Any Goals</title>
+    <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="header">
+        <div id="logo">Any Goals</div>
+        <div id="credit">By rodrigo</div>
+        <nav id="nav">
+            <div id="all" class="link">All</div>
+            <div id="10" class="link">Goals</div>
+            <div id="11" class="link">Dreams</div>
+        </nav>
+    </div>
+    <div id="add">
+        <div id="buttons">
+    <div class="open-button" id='addButton'> Add Item</div>
+    <div class="open-button" id='newProject'> Add Project</div>
+    </div>
+
+
+    <div class="form-popup" id="myForm">
+        <form class="form-container" onsubmit="return myFunction();"  >
+          <div class="login"> Add Item</div>
+    
+          <input type="text" placeholder="Enter Item Name" name="title" id="formTitle">
+          <input type="text" placeholder="Enter Description" name="desc" id="formDesc">
+          <textarea rows="7" cols="43"  placeholder="Note" name="notes" id="formNote"></textarea>
+          <input type="text" placeholder="Due Date" name="date" id="formDate">
+          <button type="submit" class="btn" id="submit">Submit</button>
+          <button type="button" id="closeButton" class="btn cancel">Close</button>
+        </form>
+      </div>
+      <div class="form-popup" id="myProject">
+        <form class="form-container" onsubmit="return myFunction();"  >
+          <div class="login"> Add Project</div>
+          <input type="text" placeholder="Enter Project Name" name="title" id="projectName">
+          <button type="submit" class="btn" id="submits">Submit</button>
+          <button type="button" id="closeButtons" class="btn cancel">Close</button>
+        </form>
+      </div>
+      </div>
+      <div id="allGoals"></div>
+    <div id="content"></div>
+    <div id="dreams"></div>
+    <div id="three"></div>
+    <div id="four"></div>
+    <div id="five"></div>
+    <div id="popups"></div>
+    <div id="footer"></div>
+    <script src="main.js" defer></script>
+  </body>
+</html>
