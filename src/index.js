@@ -19,7 +19,7 @@ function Goals (title,desc,dueDate,notes,category,email) {
 
 
  addGoals(goalOne);
- addGoals(goalTwo);
+
 
  function addGoals(myGoal) {
     myGoals.push(myGoal);
